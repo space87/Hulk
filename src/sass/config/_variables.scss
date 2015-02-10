@@ -1,0 +1,21 @@
+$gutterWidth:1rem;
+$outerMargin:2rem;
+$gutterCompensation:(($gutterWidth / 2) * -1);
+$halfGutter:($gutterWidth / 2);
+
+
+// set true to support ie9+ otherwise support is ie11+
+$legacy: false;
+
+// the amount of the columns for the grid
+$columns: 12;
+
+// breakpoint variables
+$minDevice:320px;
+$mobile: 615px;
+$tablet: 768px;
+$desktop:990px;
+$uber: 1200px;
+
+// breakpoint mapped variables
+$breakPoints: (mobile:$minDevice,tablet:$mobile, desktop:$tablet,uber:$desktop);

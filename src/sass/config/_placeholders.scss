@@ -1,0 +1,20 @@
+%container {
+    margin-left: auto;
+    margin-right: auto;
+//    padding-right: $outerMargin;
+//    padding-left: $outerMargin;
+    width: 100%;
+}
+%column { 
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-right: $halfGutter;
+    padding-left: $halfGutter;
+    margin-bottom: $halfGutter;
+}
+
+

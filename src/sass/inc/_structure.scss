@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    @extend %container;   
+}
+
+.container {
+    max-width: 990px;
+    @extend %container;   
+}
+
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: $gutterCompensation;
+    margin-left: $gutterCompensation;  
+}
+
+
+// auto col for all breakpoints
+
+.col-xs, .col-md , .col-lg, .col-uber  {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%
+}
+
+// fixed structure
+// xs structure
+//@include respond-to('mobile') {
+    @include gridType('xs');
+
+    @include grid('xs');   
+//}
+
+// tablet structure
+@include respond-to('tablet') {
+    @include gridType('md');
+
+    @include grid('md');
+}
+
+
+// desktop structure
+@include respond-to('desktop') {
+    @include gridType('lg');
+
+    @include grid('lg');
+}
+
+// uber structure
+@include respond-to('uber') {
+    @include gridType('uber');
+
+    @include grid('uber');
+}
+
+

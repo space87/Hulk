@@ -1,0 +1,140 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: arial;
+    font-size: 16px;
+}
+
+header#header {
+    background-color:#fff;
+    width:100%;
+    height:100%;
+    padding-top: 40px;
+    
+    h1 {
+        text-align: center;
+        font-family: Anton;
+        font-size: 94px;
+        margin:0 0 10px 0;
+        color:#8AE62E;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 16px;
+        color:#444;
+        margin:0 0 50px 0;
+        
+    }
+    
+    .highlight {
+        color:#8AE62E;
+        font-weight: 800;
+    }
+    
+    .ctas {
+        margin:0 0 40px 0 ;   
+        
+    }
+    
+    a {
+        
+        background: none;
+        border: 1px solid #8AE62E;
+        padding:5px;
+        color:#8AE62E;;
+        min-height: 50px;
+        cursor:pointer;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 36px;
+        width: 40%;
+        display: inline-block;
+        margin: 0 5% 0 5%;
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        border-radius: 4px;
+        
+        @media (min-width:320px) and (max-width:614px) {
+            width:200px;
+            margin:0 auto;
+            display: block;
+            float: none;
+        }
+        
+        
+        &:hover {
+            
+            background: #8AE62E;
+            color:#fff;
+            
+        }
+        
+        &#download {
+        
+            @media (min-width:320px) and (max-width:614px) {
+                transition: all 1sec linear;
+                display: none;
+            }
+        }
+        
+    }
+    
+    
+}
+
+section#mainContent {
+    background-color: #DBE1D7;
+    width: 100%;
+    padding-top:50px;
+    
+    .header {
+        font-size: 24px;
+        font-family: arial;
+        font-weight: bold;
+        margin:0 0 10px;
+        color:#444;
+    }
+    
+    .miniDesc {
+        
+        margin:0 0 30px 0;
+        color:#444;
+        
+    }
+    
+}
+
+.box {
+            background:blue;
+            color:white;
+            font-size: 14px;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+    display: inline-block;
+            
+}
+
+code {
+    font-family: monospace;
+}
+        
+pre {
+            overflow-x: auto;
+            padding: 1.25em;
+            border: 1px solid #e6e6e6;
+            border-left-width: 5px;
+            margin: 1.6em 0;
+            font-size: .875em;
+            background: #fcfcfc;
+            white-space: pre;
+            word-wrap: normal;   
+            
+}

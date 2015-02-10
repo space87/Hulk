@@ -1,0 +1,38 @@
+.start-xs {
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.end-xs {
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.top-xs {
+    align-items: flex-start;
+}
+
+.middle-xs {
+    align-items: center;
+}
+
+.bottom-xs {
+    align-items: flex-end;
+}
+
+.around-xs {
+   justify-content: space-around; 
+}
+
+.between-xs {
+    justify-content: space-between;
+}
+
+.first-xs {
+    order:-1;
+}
+
+.last-xs {
+    order:1;
+}
+

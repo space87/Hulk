@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    @extend %container;   
+}
+
+.container {
+    max-width: 990px;
+    @extend %container;   
+}
+
+.row {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-right: $gutterCompensation;
+    margin-left: $gutterCompensation;  
+}
+
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+// auto col for all breakpoints
+
+.col-xs, .col-md , .col-lg, .col-uber  {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 1px;
+}
+
+// xs structure
+
+@include gridType('xs');
+
+@include grid('xs');
+
+// tablet structure
+
+@include gridType('md');
+
+@include grid('md');
+
+
+// desktop structure
+
+@include gridType('lg');
+
+@include grid('lg');
+
+
+// uber structure
+
+@include gridType('uber');
+
+@include grid('uber');

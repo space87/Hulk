@@ -1,0 +1,35 @@
+// create classes to allow ordering of the columns
+
+@mixin ordering($size) {
+    
+    @for $i from 1 to $columns+1 {
+      
+      @if($legacy == false) {
+          
+            .col-order-#{$i} {
+             order:#{$i};
+
+          }
+          
+          
+          .col-#{$size}-order-#{$i} {
+             order:#{$i};
+
+          }
+          
+      } @else {
+            
+           .col-order-#{$i} {
+             left:(((100 / $columns) * $i) * 1%);
+            }
+          
+          
+           .col-#{$size}-order-#{$i} {
+             left:(((100 / $columns) * $i) * 1%);
+          }
+      }
+   
+      
+  }
+
+}

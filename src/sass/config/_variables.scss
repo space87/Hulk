@@ -18,4 +18,4 @@ $desktop:990px;
 $uber: 1200px;
 
 // breakpoint mapped variables
-$breakPoints: (mobile:$minDevice,tablet:$mobile, desktop:$tablet,uber:$desktop);
+$breakPoints: (mobile:$minDevice,tablet:$mobile, desktop:$tablet,uber:$desktop,big:$uber);

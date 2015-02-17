@@ -1,0 +1,257 @@
+#footer {
+    margin: 15px 0 0 0;
+    padding: 20px 0 60px 0;
+    background: $footerColor;
+    clear: both;
+    float: left;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    margin-bottom: -20px;
+    min-width: $lg;
+    a {
+        color: #d2d6d9;
+        padding: 0;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .footNote {
+        @include font-size(24);
+        line-height: 14px;
+        color: $aoWhite;
+        clear: both;
+        font-weight: normal;
+        width: 100%;
+        margin: 8px 0 0 0px;
+        text-align: left;
+        font-family: $aoFont;
+        a {
+            @include font-size(24);
+            color: $aoWhite;
+        }
+    }
+    .footer-text {
+        color: #ccc;
+        margin-top: 6px;
+        @include font-size(14);
+    }
+    .footerHorizontalDivider {
+        border-bottom: 1px solid #666;
+        width: 100%;
+        height: 4px;
+        display: block;
+        float: left;
+        margin: 15px 0;
+        &.last {
+            margin-bottom: 5px;
+        }
+    }
+    .proudlyPart {
+        clear: both;
+        color: #888;
+        margin: 0 0 0 0px;
+        text-align: left;
+        margin-top: 30px;
+        @include font-size(14);
+    }
+}
+
+#footerContent {
+    width: 990px;
+    height: 360px;
+    margin: 0 auto;
+    background: $footerColor;
+    overflow: hidden;
+    .footerHeader {
+        @include font-size(24);
+        font-weight: normal;
+        font-family: $aoFont;
+        color: $aoWhite;
+        pointer-events: none;
+    }
+    ul {
+        padding: 10px 0 0 0;
+        float: left;
+        margin: 6px 0;
+        li {
+            float: left;
+            line-height: 1.6em;
+            color: #ccc;
+            padding-left: 0;
+            list-style: none;
+        }
+    }
+    a {
+        @include font-size(14);
+        line-height: 22px;
+        width: 208px;
+        height: 43px;
+        color: #ccc;
+    }
+    .terms {
+        margin: 0px;
+        padding: 0;
+        text-align: center;
+        li {
+            width: auto;
+            margin-right: 0;
+            padding: 0px 4px 0 0;
+            color: #666;
+            text-align: center;
+            a {
+                text-transform: lowercase;
+                color: #ccc;
+                @include font-size(14);
+                margin-right: 3px;
+                margin-left: 3px;
+            }
+        }
+        li:nth-child(1) a {
+            margin-left: 0px;
+        }
+    }
+    .vatMsg {
+        margin-top: 14px;
+    }
+    .idealo {
+        float: right;
+        width: auto;
+        height: 50px;
+        line-height: 1;
+        img {
+            width: 50px;
+        }
+    }
+}
+
+.footerColumn {
+    width: 25%;
+    float: left;
+    margin-top: 10px;
+}
+
+.footerWeAccept {
+    width: 605px;
+    float: left;
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+.thanksMessage {
+    display: none;
+}
+
+.footerNewsletter {
+    width: 249px;
+    float: right;
+    position: relative;
+    .newsPromoText {
+        font-family: $fontFamily;
+        color: #ccc;
+        margin-top: 8px;
+        @include font-size(14);
+        span {
+            color: $aoGreen;
+            font-family: ao-icons;
+            margin-right: 4px;
+        }
+    }
+    .footerHeader {
+        @include font-size(20);
+        line-height: 32px;
+    }
+    .leftCopy {
+        width: 180px;
+        float: left;
+    }
+    .enquiryButton {
+        @include button($aoGreen);
+        width: 20px;
+        height: 30px;
+        margin: 0;
+        min-width: 22px!important;
+        position: absolute;
+        bottom: 8px;
+        right: 0px;
+        padding-top: 2px;
+        padding-bottom: 6px;
+        padding-left: 14px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    fieldset {
+        width: 249px;
+        float: left;
+        input.firstname, input.surname {
+            width: 125px;
+            height: 40px;
+            margin: 0;
+        }
+        input.firstname {
+            margin-right: 2px;
+        }
+        input.email {
+            width: 210px;
+            height: 35px;
+            margin: 8px 0;
+            border-radius: $aoRadius;
+        }
+        input.firstname,
+        input.surname,
+        input.email {
+            padding: 0px 0px 5px 5px;
+            background-color: #585a5c;
+            @include font-size(15);
+            color: #ccc;
+            border: none;
+        }
+    }
+    .emailError {
+        height: 20px;
+        width: 242px;
+        top: 99px;
+        left: 0px;
+    }
+    .hidden {
+        display: none;
+    }
+    .speech-bubble {
+        color: $aoWhite;
+        padding: 4px;
+        background: $aoRed;
+        opacity: 1;
+        position: absolute;
+        border-bottom-right-radius: $aoRadius;
+        border-bottom-left-radius: $aoRadius;
+    }
+    .speech-bubble:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        opacity: 1;
+        height: 0;
+    }
+    .speech-bubble.firstnameError:before,
+    #speech-bubble.surnameError:before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 16px solid $aoRed;
+        margin: 20px 0 0 121px;
+    }
+    .speech-bubble.emailError:before {
+        border-bottom: 13px solid $aoRed;
+        border-left: 8px solid transparent;
+        border-right: 10px solid transparent;
+        margin: -15px 0 0 65px;
+    }
+}
+
+.ie8 #footer #footerContent .footerNewsletter .tertiaryButton {
+    height: 32px;
+}
+
+.ie8 #footer input.emailAddress {
+    padding-top: 5px;
+}

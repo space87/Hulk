@@ -1,0 +1,37 @@
+// media query mixin, you pass in the lowest breakpoint and the highest to create the query. if you dont pass in the highest it will treat uber as the max break point
+@mixin respond-to($breakpoint, $maxBreakpoint:'') {
+
+        @if($maxBreakpoint == '') {
+            
+            
+            
+            @if map-has-key($breakPoints, $breakpoint) {
+                @warn "no  max breakpoint was entered";
+
+                @media (min-width: #{map-get($breakPoints,$breakpoint)}) {
+                    @content;    
+                }
+
+            }  @else {
+        
+                @warn "Unfortunately, no value could be retrieved from '#{$breakpoint}'. " + "Please make sure it is defined in the $breakPoints map";
+
+
+            }
+
+    
+        } @else {
+            
+            @if map-has-key($breakPoints, $breakpoint) {
+                @if map-has-key($breakPoints, $maxBreakpoint) {
+
+                    @media (min-width: #{map-get($breakPoints,$breakpoint)}) and (max-width:#{map-get($breakPoints,$maxBreakpoint)}) {
+                        @content;    
+                    }
+
+                }
+
+            }
+        }
+           
+}

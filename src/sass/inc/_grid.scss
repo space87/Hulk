@@ -1,0 +1,49 @@
+@mixin gridType($size) {
+
+
+   @for $i from 1 to $columns+1 {
+       .col-#{$size}-#{$i} {
+           @if($legacy != true) {
+             @extend %column;  
+           } @else {
+             @extend %columnLegacy;  
+           }
+               
+       }
+    
+        .col-#{$size}-offset-#{$i} {
+            @if($legacy != true) {
+                @extend %column;  
+            } @else {
+                @extend %columnLegacy;   
+            }   
+        }
+       
+   }
+
+    
+    
+}
+
+
+
+@mixin grid($size) {
+    
+  @for $i from 1 to $columns+1 {
+      
+      
+      .col-#{$size}-#{$i} {
+          
+         width: (((100 / $columns) * $i) * 1%);
+         max-width: (((100 / $columns) * $i) * 1%);
+          
+      }
+    
+        .col-#{$size}-offset-#{$i} {
+            margin-left: (((100 / $columns) * $i) * 1%);
+            
+        }
+      
+  }
+    
+}

@@ -8,15 +8,18 @@
 
 .container {
     max-width: 990px;
+    min-width: 990px;
     @extend %container;   
 }
 
 .row {
     box-sizing: border-box;
-    display: block;
+    display: inline-block;
     width: 100%;
+    font-size: 0;
     margin-right: $gutterCompensation;
-    margin-left: $gutterCompensation;  
+    margin-left: $gutterCompensation;
+    margin-bottom: 10px;
 }
 
 .row:before, 
@@ -35,17 +38,6 @@
     min-height: 1px;
 }
 
-// xs structure
-
-@include gridType('xs');
-
-@include grid('xs');
-
-// tablet structure
-
-@include gridType('md');
-
-@include grid('md');
 
 
 // desktop structure
@@ -54,9 +46,5 @@
 
 @include grid('lg');
 
+@include ordering('lg');
 
-// uber structure
-
-@include gridType('uber');
-
-@include grid('uber');

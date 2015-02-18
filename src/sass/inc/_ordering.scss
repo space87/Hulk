@@ -6,27 +6,27 @@
       
       @if($legacy == false) {
           
-            .col-order-#{$i} {
+            .col-push-#{$i} {
              order:#{$i};
 
           }
           
           
-          .col-#{$size}-order-#{$i} {
+          .col-#{$size}-push-#{$i} {
              order:#{$i};
 
           }
           
       } @else {
             
-           .col-order-#{$i} {
+           .col-push-#{$i} {
              left:(((100 / $columns) * $i) * 1%);
             }
           
-          
-           .col-#{$size}-order-#{$i} {
-             left:(((100 / $columns) * $i) * 1%);
-          }
+          .col-pull-#{$i} {
+             left:-(((100 / $columns) * $i) * 1%);
+            }
+      
       }
    
       

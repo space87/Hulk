@@ -2,8 +2,10 @@
     box-sizing: border-box;
     display: inline-block;
     width: auto;
-    height: 1px;
     padding-right: $halfGutter;
-    padding-left: $halfGutter;        
+    padding-left: $halfGutter;
+    position: relative;
+    vertical-align: top;
+    margin-bottom: 15px;
 }
 

@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: arial;
@@ -90,17 +91,20 @@ section#mainContent {
   color: #fff;
   font-size: 14px;
   width: 100%;
-  min-height: 50px;
   height: 100%;
   text-align: center;
   display: inline-block;
-  padding: 5px; }
+  padding: 20px 0 20px 0; }
   .box p {
     vertical-align: bottom;
     display: inline-block; }
     @media (max-width: 615px) {
       .box p {
         display: none; } }
+  .box.red {
+    background: red; }
+  .box.blue {
+    background: blue; }
 
 code {
   font-family: monospace; }
@@ -130,3 +134,12 @@ pre[rel] {
     font-weight: bold;
     padding: 10px 0;
     text-indent: 15px; }
+
+video {
+  width: 100%; }
+
+.ie8 .container {
+  min-width: 1000px;
+  max-width: 1000px; }
+.ie8 .row {
+  margin-bottom: 5px; }

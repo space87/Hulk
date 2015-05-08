@@ -4,11 +4,9 @@
   width: 100%; }
 
 .row {
-  display: inline-block;
-  position: relative;
-  margin-left: -0.5rem;
   font-size: 0;
-  width: 101%; }
+  width: 101%;
+  margin-left: -0.5rem; }
 
 .col-xs, .col-md, .col-lg, .col-uber {
   padding-top: 0.5rem;
@@ -19,8 +17,32 @@
     margin-left: 0;
     width: 100%; }
 
+@media (min-width: 320px) and (max-width: 615px) {
+  .xs-hide {
+    display: none; }
+
+  .xs-show {
+    display: inline-block; } }
+@media (min-width: 615px) and (max-width: 768px) {
+  .md-hide {
+    display: none; }
+
+  .md-show {
+    display: inline-block; } }
+@media (min-width: 768px) and (max-width: 990px) {
+  .lg-hide {
+    display: none; }
+
+  .lg-show {
+    display: inline-block; } }
+@media (min-width: 990px) {
+  .uber-hide {
+    display: none; }
+
+  .uber-show {
+    display: inline-block; } }
 .container {
-  max-width: 1000px; }
+  max-width: 50em; }
 
 .row:before,
 .row:after {
@@ -33,305 +55,221 @@
   max-width: 100%;
   min-height: 1px; }
 
-.col-xs-1 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-1 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-1 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-1 {
+.col-xs-1 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-1 .row {
+  .col-xs-1 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-1 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-2 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-2 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-2 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-2 {
+.col-xs-offset-1 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-2 .row {
+  .col-xs-offset-1 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-2 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-3 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-3 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-3 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-3 {
+.col-xs-2 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-3 .row {
+  .col-xs-2 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-3 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-4 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-4 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-4 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-4 {
+.col-xs-offset-2 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-4 .row {
+  .col-xs-offset-2 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-4 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-5 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-5 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-5 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-5 {
+.col-xs-3 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-5 .row {
+  .col-xs-3 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-5 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-6 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-6 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-6 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-6 {
+.col-xs-offset-3 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-6 .row {
+  .col-xs-offset-3 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-6 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-7 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-7 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-7 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-7 {
+.col-xs-4 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-7 .row {
+  .col-xs-4 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-7 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-8 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-8 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-8 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-8 {
+.col-xs-offset-4 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-8 .row {
+  .col-xs-offset-4 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-8 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-9 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-9 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-9 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-9 {
+.col-xs-5 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-9 .row {
+  .col-xs-5 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-9 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-10 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-10 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-10 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-10 {
+.col-xs-offset-5 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-10 .row {
+  .col-xs-offset-5 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-10 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-11 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-11 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-11 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-11 {
+.col-xs-6 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-11 .row {
+  .col-xs-6 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-11 .row > div:first-child {
-      padding: 0; }
 
-.col-xs-12 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  margin-bottom: 0.5px;
-  margin-bottom: 0.5rem; }
-  .col-xs-12 .row {
-    margin-left: 0;
-    width: 100%; }
-    .col-xs-12 .row > div:first-child {
-      padding: 0; }
-
-.col-xs-offset-12 {
+.col-xs-offset-6 .column {
   padding-top: 0.5rem;
   padding-left: 5px;
   padding-left: 0.5rem;
   display: inline-block; }
-  .col-xs-offset-12 .row {
+  .col-xs-offset-6 .column .row {
     margin-left: 0;
     width: 100%; }
-    .col-xs-offset-12 .row > div:first-child {
-      padding: 0; }
+
+.col-xs-7 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-7 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-offset-7 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-offset-7 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-8 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-8 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-offset-8 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-offset-8 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-9 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-9 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-offset-9 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-offset-9 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-10 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-10 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-offset-10 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-offset-10 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-11 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-11 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-offset-11 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-offset-11 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-12 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-12 .column .row {
+    margin-left: 0;
+    width: 100%; }
+
+.col-xs-offset-12 .column {
+  padding-top: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block; }
+  .col-xs-offset-12 .column .row {
+    margin-left: 0;
+    width: 100%; }
 
 .col-xs-1 {
   width: 8.33333%; }
@@ -478,305 +416,221 @@
   left: -100%; }
 
 @media (min-width: 615px) and (max-width: 990px) {
-  .col-md-1 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-1 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-1 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-1 {
+  .col-md-1 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-1 .row {
+    .col-md-1 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-1 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-2 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-2 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-2 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-2 {
+  .col-md-offset-1 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-2 .row {
+    .col-md-offset-1 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-2 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-3 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-3 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-3 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-3 {
+  .col-md-2 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-3 .row {
+    .col-md-2 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-3 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-4 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-4 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-4 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-4 {
+  .col-md-offset-2 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-4 .row {
+    .col-md-offset-2 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-4 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-5 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-5 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-5 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-5 {
+  .col-md-3 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-5 .row {
+    .col-md-3 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-5 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-6 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-6 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-6 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-6 {
+  .col-md-offset-3 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-6 .row {
+    .col-md-offset-3 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-6 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-7 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-7 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-7 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-7 {
+  .col-md-4 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-7 .row {
+    .col-md-4 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-7 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-8 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-8 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-8 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-8 {
+  .col-md-offset-4 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-8 .row {
+    .col-md-offset-4 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-8 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-9 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-9 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-9 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-9 {
+  .col-md-5 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-9 .row {
+    .col-md-5 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-9 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-10 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-10 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-10 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-10 {
+  .col-md-offset-5 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-10 .row {
+    .col-md-offset-5 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-10 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-11 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-11 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-11 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-11 {
+  .col-md-6 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-11 .row {
+    .col-md-6 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-11 .row > div:first-child {
-        padding: 0; }
 
-  .col-md-12 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-md-12 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-md-12 .row > div:first-child {
-        padding: 0; }
-
-  .col-md-offset-12 {
+  .col-md-offset-6 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-md-offset-12 .row {
+    .col-md-offset-6 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-md-offset-12 .row > div:first-child {
-        padding: 0; }
+
+  .col-md-7 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-7 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-offset-7 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-offset-7 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-8 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-8 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-offset-8 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-offset-8 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-9 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-9 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-offset-9 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-offset-9 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-10 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-10 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-offset-10 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-offset-10 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-11 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-11 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-offset-11 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-offset-11 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-12 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-12 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-md-offset-12 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-md-offset-12 .column .row {
+      margin-left: 0;
+      width: 100%; }
 
   .col-md-1 {
     width: 8.33333%; }
@@ -922,305 +776,221 @@
   .col-pull-12 {
     left: -100%; } }
 @media (min-width: 768px) and (max-width: 1200px) {
-  .col-lg-1 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-1 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-1 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-1 {
+  .col-lg-1 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-1 .row {
+    .col-lg-1 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-1 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-2 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-2 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-2 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-2 {
+  .col-lg-offset-1 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-2 .row {
+    .col-lg-offset-1 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-2 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-3 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-3 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-3 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-3 {
+  .col-lg-2 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-3 .row {
+    .col-lg-2 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-3 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-4 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-4 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-4 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-4 {
+  .col-lg-offset-2 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-4 .row {
+    .col-lg-offset-2 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-4 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-5 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-5 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-5 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-5 {
+  .col-lg-3 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-5 .row {
+    .col-lg-3 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-5 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-6 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-6 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-6 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-6 {
+  .col-lg-offset-3 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-6 .row {
+    .col-lg-offset-3 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-6 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-7 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-7 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-7 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-7 {
+  .col-lg-4 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-7 .row {
+    .col-lg-4 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-7 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-8 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-8 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-8 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-8 {
+  .col-lg-offset-4 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-8 .row {
+    .col-lg-offset-4 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-8 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-9 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-9 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-9 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-9 {
+  .col-lg-5 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-9 .row {
+    .col-lg-5 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-9 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-10 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-10 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-10 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-10 {
+  .col-lg-offset-5 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-10 .row {
+    .col-lg-offset-5 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-10 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-11 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-11 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-11 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-11 {
+  .col-lg-6 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-11 .row {
+    .col-lg-6 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-11 .row > div:first-child {
-        padding: 0; }
 
-  .col-lg-12 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-lg-12 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-lg-12 .row > div:first-child {
-        padding: 0; }
-
-  .col-lg-offset-12 {
+  .col-lg-offset-6 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-lg-offset-12 .row {
+    .col-lg-offset-6 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-lg-offset-12 .row > div:first-child {
-        padding: 0; }
+
+  .col-lg-7 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-7 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-offset-7 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-offset-7 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-8 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-8 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-offset-8 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-offset-8 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-9 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-9 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-offset-9 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-offset-9 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-10 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-10 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-offset-10 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-offset-10 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-11 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-11 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-offset-11 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-offset-11 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-12 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-12 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-lg-offset-12 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-lg-offset-12 .column .row {
+      margin-left: 0;
+      width: 100%; }
 
   .col-lg-1 {
     width: 8.33333%; }
@@ -1366,305 +1136,221 @@
   .col-pull-12 {
     left: -100%; } }
 @media (min-width: 990px) {
-  .col-uber-1 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-1 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-1 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-1 {
+  .col-uber-1 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-1 .row {
+    .col-uber-1 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-1 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-2 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-2 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-2 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-2 {
+  .col-uber-offset-1 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-2 .row {
+    .col-uber-offset-1 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-2 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-3 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-3 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-3 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-3 {
+  .col-uber-2 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-3 .row {
+    .col-uber-2 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-3 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-4 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-4 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-4 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-4 {
+  .col-uber-offset-2 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-4 .row {
+    .col-uber-offset-2 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-4 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-5 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-5 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-5 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-5 {
+  .col-uber-3 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-5 .row {
+    .col-uber-3 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-5 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-6 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-6 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-6 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-6 {
+  .col-uber-offset-3 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-6 .row {
+    .col-uber-offset-3 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-6 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-7 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-7 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-7 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-7 {
+  .col-uber-4 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-7 .row {
+    .col-uber-4 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-7 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-8 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-8 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-8 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-8 {
+  .col-uber-offset-4 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-8 .row {
+    .col-uber-offset-4 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-8 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-9 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-9 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-9 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-9 {
+  .col-uber-5 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-9 .row {
+    .col-uber-5 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-9 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-10 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-10 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-10 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-10 {
+  .col-uber-offset-5 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-10 .row {
+    .col-uber-offset-5 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-10 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-11 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-11 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-11 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-11 {
+  .col-uber-6 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-11 .row {
+    .col-uber-6 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-11 .row > div:first-child {
-        padding: 0; }
 
-  .col-uber-12 {
-    display: inline-block;
-    width: auto;
-    position: relative;
-    padding-left: 5px;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5px;
-    margin-bottom: 0.5rem; }
-    .col-uber-12 .row {
-      margin-left: 0;
-      width: 100%; }
-      .col-uber-12 .row > div:first-child {
-        padding: 0; }
-
-  .col-uber-offset-12 {
+  .col-uber-offset-6 .column {
     padding-top: 0.5rem;
     padding-left: 5px;
     padding-left: 0.5rem;
     display: inline-block; }
-    .col-uber-offset-12 .row {
+    .col-uber-offset-6 .column .row {
       margin-left: 0;
       width: 100%; }
-      .col-uber-offset-12 .row > div:first-child {
-        padding: 0; }
+
+  .col-uber-7 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-7 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-offset-7 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-offset-7 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-8 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-8 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-offset-8 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-offset-8 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-9 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-9 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-offset-9 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-offset-9 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-10 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-10 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-offset-10 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-offset-10 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-11 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-11 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-offset-11 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-offset-11 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-12 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-12 .column .row {
+      margin-left: 0;
+      width: 100%; }
+
+  .col-uber-offset-12 .column {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    padding-left: 0.5rem;
+    display: inline-block; }
+    .col-uber-offset-12 .column .row {
+      margin-left: 0;
+      width: 100%; }
 
   .col-uber-1 {
     width: 8.33333%; }
@@ -1809,27 +1495,3 @@
 
   .col-pull-12 {
     left: -100%; } }
-@media (min-width: 320px) and (max-width: 615px) {
-  .xs-hide {
-    display: none; }
-
-  .xs-show {
-    display: inline-block; } }
-@media (min-width: 615px) and (max-width: 768px) {
-  .md-hide {
-    display: none; }
-
-  .md-show {
-    display: inline-block; } }
-@media (min-width: 768px) and (max-width: 1200px) {
-  .lg-hide {
-    display: none; }
-
-  .lg-show {
-    display: inline-block; } }
-@media (min-width: 1200px) {
-  .uber-hide {
-    display: none; }
-
-  .uber-show {
-    display: inline-block; } }

@@ -3,21 +3,6 @@
 @mixin ordering($size) {
     
     @for $i from 1 to $columns+1 {
-      
-      @if($legacy == false) {
-          
-            .col-push-#{$i} {
-             order:#{$i};
-
-          }
-          
-          
-          .col-#{$size}-push-#{$i} {
-             order:#{$i};
-
-          }
-          
-      } @else {
             
            .col-push-#{$i} {
              left:(((100 / $columns) * $i) * 1%);
@@ -27,7 +12,6 @@
              left:-(((100 / $columns) * $i) * 1%);
             }
       
-      }
    
       
   }

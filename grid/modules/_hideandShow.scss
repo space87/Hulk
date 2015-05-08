@@ -1,0 +1,47 @@
+@include respond-to('mobile','tablet') {
+      
+    .xs-hide {
+        display: none;   
+    }
+    
+    .xs-show {
+        display: inline-block;  
+    }
+    
+} 
+
+@include respond-to('tablet','desktop') {
+      
+    .md-hide {
+        display: none;   
+    }
+    
+    .md-show {
+        display: inline-block;  
+    }
+    
+}
+
+@include respond-to('desktop','big') {
+      
+    .lg-hide {
+        display: none;   
+    }
+    
+    .lg-show {
+        display: inline-block;  
+    }
+    
+}
+
+@include respond-to('big') {
+      
+    .uber-hide {
+        display: none;   
+    }
+    
+    .uber-show {
+        display: inline-block;  
+    }
+    
+}

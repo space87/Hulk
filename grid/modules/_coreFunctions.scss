@@ -6,7 +6,7 @@
             
             
             @if map-has-key($breakPoints, $breakpoint) {
-                @warn "no  max breakpoint was entered";
+//                @warn "no  max breakpoint was entered";
 
                 @media (min-width: #{map-get($breakPoints,$breakpoint)}) {
                     @content;    
@@ -35,3 +35,4 @@
         }
            
 }
+

@@ -1,7 +1,10 @@
-@import 'variables';
+$green:#82B514;
+$purple:#60347f;
+
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body {
@@ -90,10 +93,12 @@ header#header {
     
 }
 
+
 section#mainContent {
     background-color: #FAF5EB;
     width: 100%;
     padding-top:50px;
+
     
     .header {
         font-size: 32px;
@@ -129,11 +134,10 @@ section#mainContent {
             color:#fff;
             font-size: 14px;
             width: 100%;
-            min-height: 50px;
             height: 100%;
             text-align: center;
             display: inline-block;
-    padding: 5px;
+            padding:20px 0 20px 0;
     
         p {
             vertical-align: bottom;
@@ -145,6 +149,13 @@ section#mainContent {
             
         }
     
+    &.red {
+     background:red;   
+    } 
+    
+    &.blue {
+     background:blue;   
+    }
             
 }
 
@@ -185,4 +196,19 @@ pre[rel] {
         
     }
             
+}
+
+video {
+    width:100%;
+}
+
+.ie8 {
+    
+    .container {
+        min-width:1000px;
+        max-width:1000px;
+    }
+    .row {
+     margin-bottom: 5px;
+    }
 }

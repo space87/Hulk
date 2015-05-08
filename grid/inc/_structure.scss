@@ -1,73 +1,85 @@
-* {
-    box-sizing: border-box;
-}
-
 .container-fluid {
     @extend %container;   
 }
 
 .container {
-    max-width: 990px;
+    max-width: 1000px;
     @extend %container;   
 }
 
 .row {
-    box-sizing: border-box;
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: $gutterCompensation;
-    margin-left: $gutterCompensation;  
+    @extend %row;
+    
 }
 
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
 
 // auto col for all breakpoints
 
 .col-xs, .col-md , .col-lg, .col-uber  {
-    flex-grow: 1;
-    flex-basis: 0;
+    width: auto;
     max-width: 100%;
+    min-height: 1px;
     @extend %column;
 }
 
-// fixed structure
+
+
+
+ 
 // xs structure
-//@include respond-to('mobile') {
+
     @include gridType('xs');
 
     @include grid('xs');  
 
     @include ordering('xs');
 
-//}
+    
+
+
 
 // tablet structure
 @include respond-to('tablet','uber') {
+    
     @include gridType('md');
 
     @include grid('md');
     
     @include ordering('md');
+    
+    
 }
 
 
 // desktop structure
 @include respond-to('desktop', 'big') {
+    
     @include gridType('lg');
 
     @include grid('lg');
     
     @include ordering('lg');
+    
+   
 }
 
 // uber structure
 @include respond-to('uber') {
+    
     @include gridType('uber');
 
     @include grid('uber');
     
     @include ordering('uber');
+    
+   
+    
 }
 
 
